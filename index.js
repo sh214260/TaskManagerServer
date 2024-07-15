@@ -8,7 +8,7 @@ app.use(express.json())
 const cors = require('cors')
 app.use(cors())
 
-app.use("/auth", userController)
+app.use("/", userController)
 
 app.listen(8000, () => {
     console.log("The Server is listening...");
